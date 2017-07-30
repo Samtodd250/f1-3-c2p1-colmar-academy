@@ -1,0 +1,345 @@
+body {
+margin:0;
+  }
+
+/** universal **/
+
+.container {
+  margin: auto;
+  display: flex;
+}
+
+.flex{
+  display: flex;
+}
+
+div{
+  display: block;
+}
+
+html{
+  font-family: 'Open Sans';
+  font-size: 16px;
+}
+
+span{
+font-family: 'Open Sans', sans-serif;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+/** Animations **/
+
+.button {
+  padding: 5px 0px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+}
+
+.button:hover {background-color: #64B27B}
+
+.button:active {
+  background-color: #64B27B;
+  transform: translateY(4px);
+}
+
+/** Header animation **/
+
+.box {
+  position:relative;
+  vertical-align: middle;
+  color: #0b7;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  -webkit-transition:0.5s;
+}
+
+.box:hover {
+  color: #FF4B4A;
+}
+
+.box::before, .box::after {
+  width: 100%;
+  height:100%;
+  z-index: 3;
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+
+.curmudgeon::before {
+  border-bottom: 3px solid #FF4B4A;
+  border-left: 0;
+  -webkit-transform-origin: 0% 100%;
+}
+
+.curmudgeon::after {
+  border-top: 0;
+  border-right: 0;
+  -webkit-transform-origin: 50% 50%;
+}
+
+/** buttons **/
+
+.button{
+  display: flex;
+  justify-content: center;
+  background-color: #A8FFC1;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #FF4B4A;
+}
+
+.button p{
+  display: flex;
+  width: 90%;
+  padding: 5px 0px;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
+
+/** Header **/
+
+nav{
+  height: 4rem;
+  background-color: white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div{
+  display: flex;
+  align-items: center;
+}
+
+ul{
+  margin-right: 1rem;
+}
+
+ul li{
+  display: inline;
+  padding: 0 1rem;
+  color: grey;
+}
+
+.logoimage{
+  height: 100%;
+  padding-left: 1rem;
+}
+
+.logobox{
+  height: 50px;
+}
+
+#academy{
+  color: #FF4B4A;
+}
+
+#colmar{
+  color: grey;
+}
+
+/** Banner **/
+
+.container.banner{
+  background-color: #FF8787;
+}
+
+.banner-image{
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  padding: 2rem 2.5rem 2rem 1.5rem;
+}
+
+.banner-image img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#white{
+  color: white;
+}
+
+.learn{
+  justify-content: center;
+  max-width: 40%;
+  color: #ffffff;
+  max-width: 30%;
+}
+
+/** main section **/
+
+.main{
+  background-color: white;
+}
+
+.textcolor{
+  color: grey;
+}
+
+.information{
+  max-width: 33%;
+  border-left: 1px solid #FF7C0F;
+}
+
+.top {
+    margin-top: 2rem;
+}
+
+.thumbnail{
+    width: 35%;
+    height: auto;
+    overflow: hidden;
+    margin: 1rem;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #FF4B4A;
+}
+
+div .thumbnail img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+div.information .column {
+    width: 55%;
+}
+
+.information h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.information p {
+    margin-bottom: 1.5rem;
+}
+
+.column p{
+  color: grey;
+}
+
+.column h4{
+  color: grey;
+}
+
+.information a{
+  color: #55C9FF;
+}
+
+/** Course section **/
+
+.learning{
+  background-color: #FF8787;
+  padding: 32px 0;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.background{
+  background-color: #FF8787;
+}
+
+.learning h2{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+div.course-list {
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+
+.courses-thumbnail {
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.courses {
+    max-width: 27%;
+    background-color: white;
+    margin-bottom: 1rem;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #FF4B4A;
+}
+.courses-thumbnail img{
+    max-height: 100%;
+    width: auto;
+    display: block;
+}
+
+#bold{
+  font-weight: 800;
+  color: #403E3E;
+}
+
+.courses .column {
+    margin: 1rem 1rem 1.5rem 1rem;
+}
+
+/** Thesis Exhibit **/
+
+#thesis{
+  padding: 1rem 0 0 0 ;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  display: flex;
+  color: grey;
+}
+
+.information-thesis{
+  max-width: 33%;
+}
+
+/** footer **/
+
+
+footer {
+    display: flex;
+    background-color: #FF8787;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+/** mobile section **/
+
+@media only screen and (max-width: 600px) {
+    *{
+      color: red;
+    }
+}
